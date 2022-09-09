@@ -14,10 +14,18 @@ int main(void)
 	
 	c = 'a'; 
 
+	char d = 'A'
+
 	for ( c <= 'z')
 	{
 		putchar(c);
 		c++;
+	}
+
+	for ( d <= 'Z')
+	{
+		putchar(d);
+		d++;
 	}
 	return (0);
 }
