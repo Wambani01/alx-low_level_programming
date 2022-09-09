@@ -14,7 +14,6 @@ int main(void)
 	
 	c = 'a'; 
 
-	char d = 'A'
 
 	for ( c <= 'z')
 	{
