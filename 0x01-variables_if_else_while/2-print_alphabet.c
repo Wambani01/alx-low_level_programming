@@ -22,11 +22,6 @@ int main(void)
 		c++;
 	}
 
-	for ( d <= 'Z')
-	{
-		putchar(d);
-		d++;
-	}
 	return (0);
 }
 
