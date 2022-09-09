@@ -9,7 +9,9 @@ int main(void)
 {
 	char a;
 
-	for ((a = 'a'; a <= 'd' a++); &&(a = 'f'; a <= 'p'; a++); &&(a = 'r'; a <= 'z'; a++))
+	for (a = 'a'; a <= 'd'; a++)
+	for (a = 'f'; a <= 'p'; a++)
+	for (a = 'r'; a <= 'z'; a++)
 	{
 
 		putchar(a);
