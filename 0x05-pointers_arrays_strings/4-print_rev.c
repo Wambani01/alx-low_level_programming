@@ -5,7 +5,7 @@
  * @s: string being reversed
  * Return: 0 success
  */
-void print_rev(char *s)
+void print_rev(char *s[])
 {
 	int l = strlen(s);
 	int i;
