@@ -8,11 +8,10 @@
 void print_rev(char *s)
 {
 	int l = strlen(s);
-	int m = l / 2;
 	int i;
 	int temp;
 
-	for (i = 0; i < m; i++)
+	for (i = 0; i < (l / 2); i++)
 	{
 		temp = s[i];
 		s[i] = s[l - i - 1];
