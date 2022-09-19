@@ -5,18 +5,16 @@
  * @s: string being reversed
  * Return: 0 success
  */
-void print_rev(char *s[])
+void print_rev(char *s)
 {
-	int l = strlen(s);
-	int i;
-	char temp;
+	int len;
 
-	for (i = 0; i <= (l / 2); i++)
+	for (len = 0; s[len] != 0; len++)
 	{
-		temp = s[i];
-		s[i] = s[l - i - 1];
-		s[l - i - 1] = temp;
-		_putchar(s[i]);
+		for (len = len - 1; len >= 0; len--)
+		{
+			_putchar(s[len]);
+		}
 
 	}
 	_putchar('\n');
