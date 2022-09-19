@@ -6,7 +6,7 @@
  */
 void print_rev(char *s)
 {	
-	int l = _strlen(s);
+	int l = strlen(s);
 	int i = 0;
 
 	while (l--)
