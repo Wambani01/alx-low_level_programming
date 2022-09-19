@@ -6,14 +6,17 @@
  * Return: 0 success
  */
 void print_rev(char *s)
-{	
+{
 	int l = strlen(s);
-	int i = 0;
+	int m = l / 2;
+	int i;
+	int temp;
 
-	while (l--)
+	for (i = 0; i < m; i++)
 	{
-		_putchar(s[i]);
-		i--;
+		s[i] = temp;
+		s[i] = s[l - i - 1];
+		s[l - i - 1] = temp;
 
 	}
 	_putchar('\n');
