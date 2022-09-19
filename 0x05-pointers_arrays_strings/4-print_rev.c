@@ -14,7 +14,7 @@ void print_rev(char *s)
 
 	for (i = 0; i < m; i++)
 	{
-		s[i] = temp;
+		temp = s[i];
 		s[i] = s[l - i - 1];
 		s[l - i - 1] = temp;
 
