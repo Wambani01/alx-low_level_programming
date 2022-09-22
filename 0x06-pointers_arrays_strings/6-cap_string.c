@@ -21,7 +21,9 @@ char *cap_string(char *s)
 			else if (s[i] == p[j])
 			{
 				for (j = 0; j < 13; j++)
-				s[i] = s[i] - 32;
+				{
+					s[i] = s[i] - 32;
+				{
 			}
 			else
 			{
