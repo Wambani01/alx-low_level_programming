@@ -4,7 +4,7 @@
  * @s: string to make uppercase
  * Return: uppercase letters
  */
-char *string_toupper(char *s);
+char *string_toupper(char *s)
 {
 	int i;
 
