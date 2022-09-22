@@ -19,7 +19,6 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-	return (dest);
 	}
 	else if (n >= len2)
 	{
@@ -27,7 +26,7 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[j] = src[j];
 		}
+		dest[n - j] = '\0';
 	}
-	dest[n - j] = '\0';
 	return (dest);
 }
