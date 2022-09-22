@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * *_strncpy - copy a string
  * @dest: destination
@@ -21,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	else if (n >= len2)
 	{
-		for (n = 0; n <= len2; n++)
+		for (n = 0; n >= len2; n++)
 			dest[len1 + n] = src[n];
 	}
 	dest[n] = '\0';
