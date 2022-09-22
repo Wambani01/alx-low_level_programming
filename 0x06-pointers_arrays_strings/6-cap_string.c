@@ -7,6 +7,8 @@
 char *cap_string(char *s)
 {
 	int i;
+	char p[13] = {' ', ',', '.', '\t', '\n', ';','!', '?', '"', '(', ')', '{', '}'};
+	int j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -16,9 +18,9 @@ char *cap_string(char *s)
 			{
 				s[i] = s[i] - 32;
 			}
-			else if (s[i - 1] == ' ', ',', '.', '\t', '\n', ';',
-					'!', '?', '"', '(', ')', '{', '}');
+			else if (s[i] == p[j])
 			{
+				for (j = 0; j < 13; j++)
 				s[i] = s[i] - 32;
 			}
 			else
