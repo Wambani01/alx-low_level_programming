@@ -5,7 +5,7 @@
  * @n: number of elements
  * Return: returns 0
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
 	int temp;
