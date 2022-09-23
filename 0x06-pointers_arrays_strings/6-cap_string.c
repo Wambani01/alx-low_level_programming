@@ -4,7 +4,7 @@
  * @s: string to be capitalized
  * Return: capitalized string
  */
-char *cap_string(char *s)
+char *cap_string(char *n)
 {
 	int i = 0;
 
