@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio>
 /**
  * *_memset - memset
  * @s: string array
@@ -16,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		i++;
 		n--;
 	}
-	retun(s);
+	retun (s);
 }
