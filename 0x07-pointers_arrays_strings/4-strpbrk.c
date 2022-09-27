@@ -18,6 +18,8 @@ char *_strpbrk(char *s, char *accept)
 				break;
 				s++;
 			}
+			else 
+				return (s);
 		}
 	}
 	return (s);
