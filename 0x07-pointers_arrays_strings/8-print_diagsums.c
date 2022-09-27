@@ -11,6 +11,7 @@ void print_diagsums(int *a, int size)
 	int i, j;
 	int pdsum = 0;
 	int sdsum = 0;
+	a = int p[size][size];
 
 	for (i = 0; i < size; i++)
 	{
