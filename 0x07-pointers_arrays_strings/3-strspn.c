@@ -7,22 +7,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	unsigned int len = 0;
+	int i;
+	int j;
+	int c = 0;
 
-	for (i = 0; s[i] != 0; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] != 32)
-
-		for (j = 0; accept[j] != 0; j++)
 		{
-			if (s[i] == accept[j])
+			for (j = 0; accept[j] != '\0'; j++)
 			{
-				len++;
+				if (s[i] == accept[j])
+					c++;
 			}
 		}
 		else
-			return (len);
+			return (c);
 	}
-	return (len);
+	return (c);
 }
