@@ -22,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 			break;
 	}
 	if (s[i] == accept[j])
-		return (s + i);
+		return (s);
 	else
 		return (0);
 }
