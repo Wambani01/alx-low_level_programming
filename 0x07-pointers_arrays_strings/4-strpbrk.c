@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strpbrk - locates first occurence of s character in accept
  * @s: string being checked
