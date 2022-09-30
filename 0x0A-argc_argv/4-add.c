@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int sum = 0; 
+	int sum = 0;
 
 	if (argc < 2)
 	{
@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 		if (!(*argv[i] >= '0') || !(*argv[i] <= '9'))
 		{
 			printf("Error\n");
+			return (1);
 		}
 		else
 		{
