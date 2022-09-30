@@ -6,7 +6,7 @@
  * @argv: arry of strings
  * Return: 0
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
