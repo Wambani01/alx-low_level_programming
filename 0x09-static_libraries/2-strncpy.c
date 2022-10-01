@@ -23,8 +23,4 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 	_putchar('\n');
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
+
