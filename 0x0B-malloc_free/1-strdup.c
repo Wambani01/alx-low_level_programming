@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 /**
  * _strdup - returns string pointer to the parameter copy
  * @str: parameter string
@@ -24,11 +25,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (i > n)
+	while (i < n)
 	{
 		dest[i] = str[i];
 		i++;
 	}
 	return (dest);
-	free (dest);
+	free(dest);
 }
