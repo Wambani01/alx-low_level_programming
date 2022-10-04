@@ -15,23 +15,25 @@ char *str_concat(char *s1, char *s2)
 	int n = s1_length + s2_length + 1;
 	char *dest;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (NULL);
-	}
-
 	dest = malloc(sizeof(char) * n);
 	if (dest == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < s1_length; i++)
+	if (s1 == NULL || s2 == NULL)
 	{
-		dest[i] = s1[i];
+		return (NULL);
 	}
-	for (i = 0; i < s2_length + 1; i++)
+	else
 	{
-		dest[s1_length + i] = s2[i];
+		for (i = 0; i < s1_length; i++)
+		{
+			dest[i] = s1[i];
+		}
+		for (i = 0; i < s2_length + 1; i++)
+		{
+			dest[s1_length + i] = s2[i];
+		}
 	}
 	return (dest);
 	free(dest);
