@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
 		n = strlen(str) + 1;
 	}
