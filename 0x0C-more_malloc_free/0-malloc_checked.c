@@ -12,6 +12,4 @@ void *malloc_checked(unsigned int b)
 	else
 	{
 		return (ptr);
-
-	free(ptr);
 }
