@@ -1,13 +1,17 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 void *malloc_checked(unsigned int b)
 {
-	b = (int *)malloc(sizeof(int));
+	void *ptr = malloc(b);
 
 	if (b == NULL)
 	{
 		exit (98);
 	}
-	return (b);
+	else
+	{
+		return (b);
+
 	free(b);
 }
