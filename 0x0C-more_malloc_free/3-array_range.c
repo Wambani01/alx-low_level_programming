@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 		ptr = malloc(sizeof(int) * diff);
 	}
 
-	for (i = 0; i <= diff; i++)
+	for (i = 0; i < diff; i++)
 	{
 		ptr[i] = min++;
 	}
