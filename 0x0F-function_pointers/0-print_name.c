@@ -7,7 +7,7 @@
  * @f: function pointer
  * Return: nothing
  */
-void print_name(char *name, void (*f)(char *name))
+void print_name(char *name, void (*f)(char *))
 {
 	if (name && f)
 	{
