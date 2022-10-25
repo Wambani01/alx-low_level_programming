@@ -3,8 +3,7 @@
 #include "lists.h"
 /**
  * print_list - print elements of a list
- * @list_t - list structure
- * @h - pointer to the list
+ * @h: pointer to the list
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
@@ -28,7 +27,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u] %s\n", h->len, h->str); 
+			printf("[%u] %s\n", h->len, h->str);
 		}
 	}
 	return (count);
