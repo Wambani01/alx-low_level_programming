@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
 /**
  * print_list - print elements of a list
  * @list_t - list structure
@@ -12,7 +13,7 @@ size_t print_list(const list_t *h)
 
 	if (h != NULL)
 	{
-		list_t *ptr = NULL;
+		const list_t *ptr = NULL;
 
 		ptr = h;
 
@@ -21,9 +22,9 @@ size_t print_list(const list_t *h)
 			count++;
 			ptr = ptr->next;
 		}
-		if (h -> str == NULL)
+		if (h->str == NULL)
 		{
-			printf([0] (nil));
+			printf("[0] (nil)\n");
 		}
 		else
 		{
