@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "main.h"
+#include "lists.h"
 /**
  * add_node_end - add a node at the end of a list
  * @head: pointer to current list
@@ -23,18 +23,23 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (0);
 	}
-
-	ptr = *head;
-
-	while (ptr != NULL)
-	{
-		ptr = ptr->next;
-	}
 	new->str = strdup(str);
 	new->len = strlen(str);
 	new->next = NULL;
-
-	ptr->next = new;
+	
+	if (head == NULL)
+	{
+		*head = new;
+	}
+	else
+	{
+		ptr = *head;
+		while (ptr != NULL)
+		{
+			ptr = ptr->next;
+		}
+		new->next = ptr;
+	}
 
 	return (new);
 
