@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * @sum_listint - sum of all data in a linked list
+ * sum_listint - sum of all data in a linked list
  * @head: pointer to the list
  * Return: sum of data
  */
