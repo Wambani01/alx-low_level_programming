@@ -6,25 +6,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int len = 0;
-	int base = 1;
-	int result = 0;
+	int len;
+	unsigned int base = 1;
+	unsigned int result = 0;
 
 	if (b == NULL)
 	{
 		return (0);
 	}
 
-	len = strlen(b);
+	len = strlen(b) - 1;
 
-	while (len)
+	for (; len >= 0; len--)
 	{
-		if (b[len] != '1' || b[len] != '0')
+		if (b[len] != '1' && b[len] != '0')
 		{
 			return (0);
 		}
-		result += b[len] * base;
-		base *= 2;
+		result += ((b[len] - '0') * base);
+		base = base * 2;
 	}
 	return (result);
 }
